@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Layout</title>
+  <style>
+    .main{
+        background-color: darkblue ;
+        display:grid;
+        grid-template-columns:4fr 8fr;
+        grid-template-rows: 100px 500px 300px;
+        grid-gap:8px;
+    }
+    .lay{
+        background-color: lightskyblue;
+    }
+    #item01{
+        grid-column:1/3;
+    }
+    #item02{
+        display: grid;
+        grid-template-columns: 4fr;
+        grid-template-rows: 100px 100px 100px 100px 100px;
+        grid-gap:3px;
+    }
+    #item04{
+        display:grid;
+        grid-column:1/3;
+        grid-template-columns:630px 630px 630px;
+        grid-gap:5px
+    }
+    #sub{
+        background-color: lightpink;
+    }
+    #sub1{
+        background-color: maroon;
+    }
+  </style>
+ </head>
+ <body>
+	<div class="main">
+            <div class="lay" id="item01">Item01</div>
+		    <div class="lay" id="item02">
+                <div id="sub">.</div>
+                <div id="sub">.</div>
+                <div id="sub">.</div>
+                <div id="sub">.</div>
+                <div id="sub">.</div>
+            </div>
+		    <div class="lay" id="item03">Item03</div>
+            <div class="lay" id="item04">
+                <div id="sub1">.</div>
+                <div id="sub1">.</div>
+                <div id="sub1">.</div>
+            </div>
+
+	</div>
+ </body>
+</html>

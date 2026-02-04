@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <from onsubmit="return registerFormValidation()">
+        <input type="text" name="Username" id="Username" placeholder="Enter Username"><br><br>
+        <input type="password" name="password" id="password" placeholder="Enter password">
+        <input type="checkbox" onclick="showhidepassword()">$<br><br>
+        <input type="password" name="confirmpassword" id="confirmpassword" placeholder="confirmpassword"><br><br>
+        <input type="submit">
+    </from>
+
+    <script>
+        function registerFormValidation(){
+            let Username=document.getElementById("Username").Value
+            let password=document.getElementById("password").Value
+            let confirmpassword=document.getElementById("confirmpassword").Value
+
+            if(Username==""||password==""||confirmpassword==""){
+                alert("All fields should be filled")
+                return false;
+            }
+            else if(password==confirmpassword){
+                alert("Registration success...")
+                //window.location.href="success.html"
+                return false;
+            }
+            else{
+                alert("confirm password is not matched with the password")
+                return false;
+            }
+            function showhidepassword()
+            {
+                let password=document.getElementById("password")
+                if(password.type="password"){
+                    password.type="text"
+                }
+                else
+                    password.type="password"
+                
+            }
+        }
+    </script>
+</body>
+</html>

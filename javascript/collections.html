@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+</head>
+<body>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <script>
+        let serverInfo={
+            systemName:"sys01",
+            ipAddress:"11.22.33.44",
+            operatingSystem:"windows",
+            domain:"kbn-dev.com",
+            accessGroups:["developers","admin"],
+            members:{
+                name:'raja'
+            }
+        }
+
+        let pTag=document.getElementsByTagName("p")
+
+        pTag[0].innerHTML='particular key value:'+serverInfo.systemName
+        pTag[1].innerHTML='All the keys:'+Object.keys(serverInfo)
+        pTag[2].innerHTML='Type of keys:'+typeof(Object.keys(serverInfo))
+        pTag[3].innerHTML='All the values:'+Object.values(serverInfo)
+        serverInfo.newkey=["newkey"]//anytype
+        pTag[4].innerHTML="All the Keys:"+Object.keys(serverInfo)
+        delete serverInfo.members
+        pTag[5].innerHTML='All the keys:'+Object.keys(serverInfo)
+    </script>
+</body>
+</html>

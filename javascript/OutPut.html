@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output Statements</title>
+</head>
+<body>
+    <!--Output statements-->
+    <h1 id="idOutputExample"></h1>
+    <h1 class="classoutputExample"></h1>
+    <h5 class="classoutputExample"></h5>
+    <h1 class="classoutputExample"></h1>
+    <span></span>
+    <!--Javascript code-->
+    <script>
+        console.log('program execution started...')
+        document.getElementById('idOutputExample').innerHTML='ID output example'
+        document.getElementsByClassName('classoutputExample')[0].innerHTML='class Output example 0 index'
+        document.getElementsByClassName('classoutputExample')[1].innerHTML='class Output example 1 index'
+        document.querySelector('.classoutputExample').innerHTML='class output with queryselector'
+        document.getElementsByTagName('span')[0].innerHTML='Tag output-span tag'
+        console.log('program execution completed...')
+
+        document.write('<br>document write output method')
+        document.write("<br><table border='2'><tr><th>table heading</th></tr>")
+        document.write("<form><input type='text' name='name'></form>")
+
+        alert("This is the starting of the page execution 1")
+        alert("This is the starting of the page execution 2")
+    </script>
+</body>
+</html>

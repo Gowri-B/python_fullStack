@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+
+</head>
+<body>
+    <h1 class='arrays'></h1>
+    <p class='arrays'></p>
+    <p class='arrays'></p>
+    <p class='arrays'></p>
+    <p class='arrays'></p>
+    <p class='arrays'></p>
+    <p class='arrays'></p>
+    <p class='arrays'></p>
+    <p class='arrays'></p>
+    <p class='arrays'></p>
+    <p class='arrays'></p>
+    <script>
+        let frontend=["html","css","javascript","bootstrap"]
+
+        let arrays=document.getElementsByClassName('arrays')
+        arrays[0].innerHTML='Array values are:'+frontend
+        arrays[1].innerHTML='Array values are:'+frontend.length
+        arrays[2].innerHTML='particular value:'+frontend[0]
+        frontend.push("AngularJS")//adding element in the last
+        arrays[3].innerHTML='Array all values:'+frontend
+        frontend.unshift("ReactJS")//adding element in the starting
+        arrays[4].innerHTML='Array all values:'+frontend
+        frontend.sort()//ascending order
+        arrays[5].innerHTML='Array sort:'+frontend
+        frontend.reverse()//descending order
+        arrays[6].innerHTML='Array reverse:'+frontend
+        frontend.pop()//deletes last element/value
+        arrays[7].innerHTML='Array after pop:'+frontend
+        frontend.shift()//deletes frist element/value
+        arrays[8].innerHTML='Array after shift:'+frontend
+        frontend.splice(frontend.indexof("bootstrap"),1)
+        arrays[10].innerHTML='Array after splice:'+frontend
+    </script>
+</body>
+</html>
