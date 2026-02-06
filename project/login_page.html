@@ -5,39 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <style>
-        #name{
-            justify-content:"center"
+        body{
+            align-content: center;
+            background-color: rgb(155, 221, 155);
+            position: relative;
+        }
+        h1{
+            color: darkgreen;
+            position: absolute;
+            left:700px;
+            top:100px;
+            font-family: cursive;
+            font-size: 40px;
+        }
+        p{
+            color: darkgreen;
+            position: absolute;
+            left:600px;
+            top:200px;
+            font-family: cursive;
+            font-size: 30px;
+        }
+        .name{
+            position: absolute;
+            left:750px;
+            top: 350px; 
+        }
+        .password{
+            position: absolute;
+            left:750px;
+            top: 450px;
+            
+        }
+        .button{
+            position: absolute;
+            left:800px;
+            top: 550px;
+            
         }
     </style>
 </head>
 <body>
-    <h1>Login</h1>
-    <form onsubmit="return fromlogin()">
-        <fieldset>
-            <legend>Login form</legend>
-            <label for="name">Name:</label>
-            <input type="text" name="name" placeholder="Enter your name"><br>
-
-            <label for="mail">EMail:</label>
-            <input type="email" name="mail" placeholder="Enter your email"><br>
-
-            <label fro="password">Password:</label>
-            <input type="password" name="password"><br>
-
-            <label for="Confirm_password">Confirm Password:</label>
-            <input type="password" name="Confirm_password" placeholder="re-enter the password"><br>
-
-            <button type="submit">Login</button>
-
-            <hr>
-            <div id="name">
-                @fresh organic
+    
+    <h1>Welcome Back</h1>
+    <p>Enter your credentials to continue.</p>
+    <form class="form">
+            <div class="name">
+                <input type="text" placeholder="Enter your username" /><br><br>
             </div>
-            
-        </fieldset>
+
+            <div class="password">
+                <input type="password" placeholder="Enter your password" /><br><br>
+            </div>
+
+            <div class="button">
+                <button type="submit">Sign In</button>
+            </div>
     </form>
-    <!--<div id="name">
-        @fresh organic
-    </div> -->
 </body>
 </html>

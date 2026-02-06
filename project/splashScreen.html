@@ -1,0 +1,66 @@
+<!-- Buyer side logo screen-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Page</title>
+    <style>
+        body{
+            position:relative;
+            display: flex;
+        }
+        .container{
+            background-color: lightgreen;
+            position: fixed;
+            top:250px;
+            left:500px;
+            height:350px;
+            width:700px;
+            text-align:center;
+            border:2px solid green;
+            border-radius: 50px;
+        }
+        .logoName{
+            position : fixed;
+            left:550px;
+            top:300px;
+            font-family:cursive;
+            font-size: 30px;
+            font-style: italic;
+            color:darkgreen;
+        }
+        .circle-img{
+            height:200px;
+            width:200px;
+            border-radius: 50%;
+        }
+        .logo{
+            position :fixed;
+            top:350px;
+            left:600px;
+        }
+        button{
+            padding: 20px 20px;
+            background-color: green;
+            color:black;
+            position: fixed;
+            top: 400px;
+            left:900px;
+        }
+        button:hover{
+            background-color:rgb(42, 65, 165);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logoName">FramHarvest</div>
+        <br><br>
+        <div class="logo"><img src="logo.jpg" class="circle-img"></div>
+
+        <button>Get Started</button>
+    </div>
+</body>
+</html>
